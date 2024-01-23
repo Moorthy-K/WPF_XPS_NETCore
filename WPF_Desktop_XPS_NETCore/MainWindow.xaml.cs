@@ -60,7 +60,8 @@ namespace WPF_Desktop_XPS_NETCore
             document.Close(true);
             memoryStream.Position = 0;
 
-            blobClient.Upload(memoryStream);
+            
+            blobClient.Upload(memoryStream, true);
            
             this.Close();
         }
